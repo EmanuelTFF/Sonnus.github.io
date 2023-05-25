@@ -111,20 +111,58 @@ style="margin-top: -180px;
                     margin-left:830px;">
             </div>
             <div>
-                <img src="assets/img/final 6.jfif" style="
-                    margin-left: 1200px;
-                    margin-top: -620px;">
+                <img id="instagram-img" src="assets/img/final 6.jfif" style="margin-left: 1200px; margin-top: -620px; cursor: pointer;">
             </div>
-            <div>
-                <img src="assets/img/final 7.jfif" style="
-                    margin-left: 900px;
-                    margin-top: -290px;">
+            
+            <script>
+                var instagramImg = document.getElementById("instagram-img");
+                instagramImg.addEventListener("click", function() {
+                    var instagramUsername = "sonnusterapia"; // Substitua pelo nome de usuário do Instagram desejado
+                    var instagramLink = "https://www.instagram.com/" + instagramUsername;
+                    window.open(instagramLink, "_blank");
+                });
+            </script>
+            
+                <button type="button" class="btn btn-outline-info dark-blue-border-btn" style="margin-top: 5300px; margin-left: -352px; height: 60px;">clique aqui para agendar uma consulta</button>
             </div>
-            <div>
-                <img src="assets/img/final 4.jfif" style="
-                    margin-left: 1160px;
-                    margin-top: -1200px;">
-            </div>
+            
+            <style>
+                .dark-blue-border-btn {
+                    border-color: #003366; /* Substitua pela cor azul escura desejada */
+                    color: #003366; /* Define a cor do texto como a cor do contorno para manter o contraste */
+                }
+            
+                .dark-blue-border-btn:hover {
+                    border-color: #000066; /* Substitua pela cor azul mais escura desejada para o hover */
+                    color: #000066; /* Define a cor do texto como a cor do contorno para o hover */
+                    background-color: #326ca5;
+                }
+            </style>
+            
+            <script>
+                var button = document.querySelector('.dark-blue-border-btn');
+                button.addEventListener('click', function() {
+                    var whatsappNumber = "554797802455"; // Substitua pelo número de WhatsApp desejado
+                    var whatsappLink = "https://wa.me/" + whatsappNumber;
+                    window.open(whatsappLink, "_blank");
+                });
+            </script>
+          <div>
+            <img id="email-img" src="assets/img/final 4.jfif" style="margin-left: 1160px; margin-top: -1160px; cursor: pointer;">
+        </div>
+        
+        <script>
+            var emailImg = document.getElementById("email-img");
+            emailImg.addEventListener("click", function() {
+                var emailAddress = "sonnusterapia@gmail.com"; // Substitua pelo endereço de e-mail desejado
+                var subject = "Assunto do e-mail"; // Substitua pelo assunto desejado
+                var body = "Corpo do e-mail"; // Substitua pelo corpo do e-mail desejado
+        
+                var mailtoLink = "mailto:" + emailAddress + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+                window.location.href = mailtoLink;
+            });
+        </script>
+        
     </main>
 </body>
 </html>
